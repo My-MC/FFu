@@ -85,7 +85,7 @@ export default {
       axios
         .post(postUrl, {
           dir: dirPath,
-          format: "mp3",
+          format: "mp4",
         })
         .then((res) => {
           var selecetElem = document.getElementById("Holder__Select");
