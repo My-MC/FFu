@@ -1,0 +1,81 @@
+.sentence {
+  line-height: 1.5;
+  text-align: start;
+  overflow-wrap: normal;
+}
+
+.article {
+  line-height: 1.5;
+  text-align: start;
+  overflow-wrap: normal;
+  width: 80%;
+}
+
+.main {
+  padding: 4rem 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  padding: 0 0 0 10px;
+  line-height: 1.15;
+  font-size: 2rem !important;
+  font-weight: bold;
+}
+
+.description {
+  margin: 4rem 0;
+  line-height: 1.5;
+  font-size: 1.5rem;
+}
+
+.grid {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1000px;
+}
+
+.card {
+  width: 230px;
+  height: 150px;
+  margin: 0.5rem;
+  padding: 1.5rem;
+  text-align: left;
+  color: inherit;
+  text-decoration: none;
+  border: 2px solid dimgray;
+  border-radius: 10px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+.card:hover,
+.card:focus,
+.card:active {
+  color: #0070f3;
+  border-color: #0070f3;
+}
+
+.card h2 {
+  margin: 0 0 1rem 0;
+  font-size: 1.5rem;
+}
+
+.card p {
+  margin: 0;
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+// router-linkが文字を置き換えてデザインが不統一になるので強制的に変更しています
+// The router-link replaces the text and makes the design inconsistent, so we are forcing the change
+a {
+  color: black;
+  text-decoration: none !important;
+}
