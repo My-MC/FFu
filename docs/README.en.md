@@ -12,31 +12,31 @@ Please send them to GitHub issues, discussions, and PullRequests with logs!
 
 ## Project setup
 
-``` bash
+```bash
 yarn install
 ```
 
 ### Development compile and hot reload for Electron
 
-``` bash
+```bash
 yarn electron:serve
 ```
 
 ### Compile and minilize for Electron for your products
 
-``` bash
+```bash
 yarn electron:build
 ```
 
 ### Running Unit Tests
 
-``` bash
+```bash
 yarn test:unit
 ```
 
 ### Lint and fix files
 
-``` bash
+```bash
 yarn lint
 ```
 
@@ -46,14 +46,14 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ## References
 
-Node.jsで正しく子プロセスを殺す
+Node.js で正しく子プロセスを殺す
 <https://zenn.dev/erukiti/articles/nodejs-kill-childprocess>
 
 ## Docker
 
-> **_WARN:_**  Cross-platform execution is not possible at this stage. It will be supported in the future.
+> **_WARN:_** Cross-platform execution is not possible at this stage. It will be supported in the future.
 
-``` bash
+```bash
 docker build --progress=plain -t ffu .
 docker create --name ffu -it ffu
 docker start ffu

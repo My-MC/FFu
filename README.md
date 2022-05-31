@@ -4,39 +4,39 @@
 
 [日本語 README](./README.md) • [English README](docs/README.en.md)
 
-FFuは[FFmpeg](http://ffmpeg.org)をGUI上でコンソール操作ができない方でも使えるようにするということをコンセプトに開発をしているユーティリティソフトウェアです。
+FFu は[FFmpeg](http://ffmpeg.org)を GUI 上でコンソール操作ができない方でも使えるようにするということをコンセプトに開発をしているユーティリティソフトウェアです。
 
 ## 問題や提案
 
-GitHubのissuesやdiscussions、PullRequestにログを添えて送ってください
+GitHub の issues や discussions、PullRequest にログを添えて送ってください
 
 ## Project setup
 
-``` bash
+```bash
 yarn install
 ```
 
-### Electron向けの開発用コンパイルとホットリロード
+### Electron 向けの開発用コンパイルとホットリロード
 
-``` bash
+```bash
 yarn electron:serve
 ```
 
-### Electron向けの製品用コンパイルとミニライズ
+### Electron 向けの製品用コンパイルとミニライズ
 
-``` bash
+```bash
 yarn electron:build
 ```
 
 ### ユニットテストの実行
 
-``` bash
+```bash
 yarn test:unit
 ```
 
 ### リントとフィックスファイル
 
-``` bash
+```bash
 yarn lint
 ```
 
@@ -46,14 +46,14 @@ yarn lint
 
 ## 参考文献
 
-Node.jsで正しく子プロセスを殺す
+Node.js で正しく子プロセスを殺す
 <https://zenn.dev/erukiti/articles/nodejs-kill-childprocess>
 
 ## Docker
 
-> **_WARN:_**  クロスプラットフォームでの実行は現段階ではできません。今後対応する予定です。
+> **_WARN:_** クロスプラットフォームでの実行は現段階ではできません。今後対応する予定です。
 
-``` bash
+```bash
 docker build --progress=plain -t ffu .
 docker create --name ffu -it ffu
 docker start ffu
